@@ -3,11 +3,28 @@ body {
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
     'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
     sans-serif;
+  font-family: "Inter", sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  color: #193C4D;
+  background-color: #f3f4f462;
 }
 
 code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+  font-family: "Inter", sans-serif;
+}
+
+input{
+  color: #193C4D;
+  font-weight: 350 !important;
+}
+
+label{
+  font-size: 14px;
+  font-weight: bold;
+  
+}
+
+footer{
+  margin-top: 70px !important;
 }

@@ -7,12 +7,6 @@
   pointer-events: none;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
 .App-header {
   background-color: #282c34;
   min-height: 100vh;
@@ -28,11 +22,259 @@
   color: #61dafb;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.auth-div{
+  min-height: 80vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 30px;
+  margin-bottom: 30px;
+}
+.auth-box{
+  border: 1px solid rgba(128, 128, 128, 0.487);
+  padding: 50px;
+  text-align: center;
+}
+.nav-link {
+  color: #141414;
+}
+
+.nav-item :hover {
+  color: #32C48D;
+}
+
+.btn-circle{
+  aspect-ratio: 1/1;
+  border-radius: 100%;
+  margin-left: 10px;
+}
+
+.search-input{
+  width: 300px;
+}
+
+.search-input:active{
+  box-shadow: none;
+}
+
+.search-div{
+  padding-top: 70px;
+  padding-right: 15px;
+  padding-bottom: 20px;
+  font-family: "Inter", sans-serif;
+  border-bottom: 1px;
+  border-bottom-style: solid #e3e3e5;
+  box-shadow: 0 4px 2px -2px #e3e3e5; 
+  /* border-color: #141414; */
+}
+
+.nav-sear-div{
+  padding-top: 150px;
+}
+.nav-div{
+  padding-top: 70px;
+}
+
+.heading{
+  margin-top: 20px;
+  margin-bottom: 30px !important;
+  font-weight: bold;
+}
+
+.bg-body-tertiary {
+  background-color: #F2F3F3 !important;
+  font-family: "Inter", sans-serif;
+}
+
+.cards-div{
+  display: grid;
+  align-items: center;
+  font-family: "Inter", sans-serif;
+}
+
+.card{
+  margin-right: 5%;
+  margin-bottom: 3%;
+}
+.card-text{
+  color: #193C4D;
+}
+
+.card-title{
+  font-weight: 650;
+  font-size:medium;
+}
+.card-left{
+  color: #FA7406;
+  margin-left: 15px;
+}
+.card-price{
+  font-weight: 1000;
+  color: #141414;
+  font-size: 14px;
+  
+}
+.card:hover{
+  box-shadow: 1px 1px 28.5px -7px #b0b2b2;
+}
+
+.btn-outline-dark {
+  color: #141414;
+  background-color: #f3f4f400;
+  border-color: #141414;
+  border-radius: 0;
+}
+
+.btn-outline-dark:hover,
+.btn-outline-dark:active,
+.btn-outline-dark:focus,
+.btn-outline-dark.active {
+  color: #141414;
+  background-color: #f3f4f400;
+  border: double #141414 3px;
+}
+
+
+.btn-dark {
+  color: #f3f4f4;
+  background-color: #141414;
+  border-color: #004E64;
+  border-radius: 0;
+}
+
+.btn-dark:hover,
+.btn-dark:active,
+.btn-dark:focus,
+.btn-dark.active {
+  color: #f3f4f4;
+  border-color:#141414;
+  border:3px solid;
+  border-style:double;
+}
+
+.btn-submit:hover,
+.btn-submit:active,
+.btn-submit:focus,
+.btn-submit.active {
+  border-style:none;
+}
+
+.btn-auth{
+  width: 100%;
+}
+
+.btn-search{
+  color: #f3f4f4;
+  background-color: #141414;
+  margin: 5%;
+  height: 36px;
+  border-radius: 10%;
+}
+
+.btn-search:hover,
+.btn-search:active,
+.btn-search:focus,
+.btn-search.active {
+  border: none;
+}
+
+.row-list{
+  margin-top: 12px;
+  padding-top: 10px;
+  border: 1px solid rgba(0, 0, 0, 0.175);
+}
+
+.row-list:hover{
+  box-shadow: 1px 1px 28.5px -7px #b0b2b2;
+}
+
+.profile-label{
+  display: flex;
+  align-items: center;
+  justify-content: end;
+}
+
+.form-control{
+  background-color: transparent;
+  color: #193C4D;
+  border-color: #14141456;
+  border-radius: 0.175rem;
+}
+.form-control:focus{
+  border-color: #141414;
+  box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075), 0 0 8px #14141473;
+}
+
+.side-heading{
+  font-weight: 200;
+  font-size: x-large;
+}
+
+/* product detail */
+
+.item-image-parent {
+  order: 1;
+  /* width: 50%; */
+  display: flex;
+  object-fit: contain;
+  /* or
+    object-fit: cover; */
+  margin-right: 10px;
+}
+
+.item-info-parent {
+  order: 2;
+  width: 50%;
+}
+
+.item-list-vertical {
+  order: 1;
+  width: 10%;
+  overflow-y: auto;
+  margin-top: 50px;
+}
+
+.item-image-main {
+  order: 2;
+  width: 90%;
+  height: 100%;
+}
+
+.thumb-box {
+  margin: 10px auto;
+  background: white;
+  border: 1px solid gray;
+}
+.thumb-box img {
+  width: 100%;
+  height: 100%;
+}
+
+.item-image-main img {
+  margin-left: 10px;
+  width: 100%;
+  height: auto;
+}
+
+.thumb-box:hover {
+  cursor: pointer;
+  border-color: #FA7406;
+  box-shadow: 2px 1px 2px 1px #FA7406;
+}
+
+.prod-btn{
+  width: 75%;
+  margin-bottom: 10px;
+}
+
+.contact-line{
+  border: 3px solid;
+  width: 13%;
+  color: #32C48D;
+  margin-left: 0;
+  opacity: 50%;
+}
+
+.cancel-btn:hover{
+  color: #c43232;
 }
